@@ -1,0 +1,339 @@
+
+.shadowheavy
+{
+	-webkit-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.5);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 1px 5px 2px rgba(0,0,0,0.5);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 1px 5px 2px rgba(0,0,0,0.5);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+
+
+
+/* W3 NAVBAR */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #0e98ef;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) 
+{
+	background-color: rgba(14, 152, 239, 0.5);
+	color: white;
+}
+
+ul.topnav li a.active 
+{
+	background-color: rgba(14, 152, 239, 0.5);
+	color: white;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+
+
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+.roundbtn {
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(255,255,255,.50);
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.roundbtn:hover{
+    background: rgba(255,255,255,.75);
+	border-radius: 10%;
+}
+
+.squarebtn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: rgba(255,255,255,.75);
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.squarebtn:hover {
+    background: #67c5ff;
+    color: white;
+	-webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.05);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 3px 5px 2px rgba(0,0,0,0.05);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 3px 5px 2px rgba(0,0,0,0.05);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+	
+  color: #333447;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 
+{
+	font-size: 2.5rem;
+	color: white;
+	line-height: 1;
+}
+
+h2 
+{
+	font-size: 2rem;
+	color: white;
+	line-height: 1;
+}
+	
+h3 {font-size: 1.375rem; line-height: 1;}
+h4 {font-size: 1.125rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: 0.875rem;}
+
+p 
+{
+	font-size: 1.125rem;
+	font-weight: 200;
+	line-height: 1.8;
+}
+
+.font-light {font-weight: 300;}
+.font-regular {font-weight: 400;}
+.font-heavy {font-weight: 900;}
+
+
+/* POSITIONING */
+
+.left {text-align: left;}
+.right {text-align: right;}
+
+.center 
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.justify {text-align: justify;}
+
+
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.jumbotron {
+    background: #FE7880;
+    background-image: linear-gradient(to top, #a8ddff, #28a9fc);
+    height: 760px;
+    width: 100%;
+    z-index: 100 !important;
+	padding-top: 5%;
+}
+
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+
+.jumbotron {
+    height: 600px;
+}
+
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
